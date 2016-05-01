@@ -9,9 +9,7 @@ CACHE_DIR="$2"
 ENV_DIR="$3"
 
 export LANG=en_US.UTF-8
-export PATH=/app/.local/bin:$PATH
-
-ls /app/.local/bin
+export PATH=$BUILD_DIR/.local/bin:$PATH
 
 cd "$BUILD_DIR"
 site rebuild
